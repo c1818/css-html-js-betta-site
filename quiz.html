@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ</title>
+    <link rel="stylesheet" href="fonts/iosevka/IosevkaEtoile.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+
+        <h1>QUIZ</h1>
+
+        <nav>
+
+            <a href="index.html">HOME</a>
+            <a href="quiz.html">TAKE QUIZ</a>
+            <a href="learn.html">LEARN / SUPPORT</a>
+            <a href="learn.html#references">REFERENCES</a>
+            <a href="about.html">ABOUT</a>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <form action="results.html" id="quiz-form" novalidate> <!-- novalidate to turn off auto browser pop up when missing a field -->
+
+            <section class="question-block">
+
+            <h2>Question 1:</h2>
+            <h4>How many gallons is your tank?</h4>
+
+            <div>
+
+                <label>
+
+                    <input type="radio" name="question1" value="option1">
+
+                    &lt;3 gallons <!-- &lt; is less than < and &gt; is greater than, can't actually use the < > by itself -->
+
+                </label>
+
+            </div>
+
+            <div>
+
+                <label>
+
+                    <input type="radio" name="question1" value="option2">
+
+                    &lt;5 gallons
+
+                </label>
+
+            </div>
+
+            <div>
+
+                <label>
+
+                    <input type="radio" name="question1" value="option3">
+
+                    &lt;10 gallons
+
+                </label>
+
+            </div>
+
+            <div>
+
+                <label>
+
+                    <input type="radio" name="question1" value="option4">
+
+                    &gt;10 gallons
+
+                </label>
+
+            </div>
+
+            <div>
+
+                <label>
+
+                    <input type="radio" name="question1" value="option5">
+
+                    Gallons!?
+
+                </label>
+
+            </div>
+
+            <div>
+
+                <label>
+
+                    <input type="radio" name="question1" value="option6">
+
+                    I don't have a tank yet
+
+                </label>
+
+            </div>
+
+            <p class="required-field"></p>
+
+            </section>
+
+            <section class="question-block">
+
+            <h2>Question 2:</h2>
+            <h4>Do you have a way to test <br> water parameters?</h4>
+
+            <div>
+
+                <label>
+
+                    <input type="radio" name="question2" value="option1">
+
+                    Yes, I have a liqid testing kit
+
+                </label>
+
+            </div>
+
+            <div>
+
+                <label>
+
+                    <input type="radio" name="question2" value="option2">
+
+                    Yes, I have testing strips
+
+                </label>
+
+            </div>
+
+            <div>
+
+                <label>
+
+                    <input type="radio" name="question2" value="option3">
+
+                    What does that mean?
+
+                </label>
+
+            </div>
+
+            <div>
+
+                <label>
+
+                    <input type="radio" name="question2" value="option4">
+
+                    Not yet 
+
+                </label>
+
+            </div>
+
+            <p class="required-field"></p>
+
+            </section>
+
+            <section class="question-block">
+
+            <h2>Question 3:</h2>
+            <h4>Have you 'cycled' your tank?</h4>
+
+            <div>
+
+                <label>
+
+                    <input type="radio" name="question3" value="option1">
+
+                    Yes I have
+                    
+                </label>
+
+            </div>
+
+            <div>
+
+                <label>
+
+                    <input type="radio" name="question3" value="option2">
+
+                    Not yet
+
+                </label>
+
+            </div>
+
+            <div>
+
+                <label>
+
+                    <input type="radio" name="question3" value="option3">
+
+                    I'm not sure?
+
+                </label>
+
+            </div>
+
+            <div>
+
+                <label>
+
+                    <input type="radio" name="question3" value="option4">
+
+                    I don't have a tank yet...
+
+                </label>
+
+            </div>
+
+            <p class="required-field"></p>
+
+            </section>
+
+            <section class="question-block">
+
+            <h2>Question 4:</h2>
+            <h4>What's your budget?</h4>
+
+            <div>
+
+                <label>
+
+                    <input type="radio" name="question4" value="option1">
+
+                    Nothing over $50 dollars
+                    
+                </label>
+
+            </div>
+
+            <div>
+
+                <label>
+
+                    <input type="radio" name="question4" value="option2">
+
+                    Nothing over $200 dollars
+
+                </label>
+
+            </div>
+
+            <div>
+
+                <label>
+
+                    <input type="radio" name="question4" value="option3">
+
+                    Nope, I'm all in!
+
+                </label>
+
+            </div>
+
+            <div>
+
+                <label>
+
+                    <input type="radio" name="question4" value="option4">
+
+                    I'm not sure yet
+
+                </label>
+
+            </div>
+
+            <p class="required-field"></p>
+
+            </section>
+
+            <section class="question-block">
+
+            <h2>Question 5:</h2>
+            <h4>Blank?</h4>
+
+            <div>
+
+                <label>
+
+                    <input type="radio" name="question5" value="option1">
+
+                    Blank1
+                    
+                </label>
+
+            </div>
+
+            <div>
+
+                <label>
+
+                    <input type="radio" name="question5" value="option2">
+
+                    Blank2
+
+                </label>
+
+            </div>
+
+            <div>
+
+                <label>
+
+                    <input type="radio" name="question5" value="option3">
+
+                    Blank3
+
+                </label>
+
+            </div>
+
+            <div>
+
+                <label>
+
+                    <input type="radio" name="question5" value="option4">
+
+                    Blank4
+
+                </label>
+
+            </div>
+
+            <p class="required-field"></p>
+
+            </section>
+
+            <section class="question-block">
+
+            <h2>Question 6:</h2>
+            <h4>Blank?</h4>
+
+            <div>
+
+                <label>
+
+                    <input type="radio" name="question6" value="option1">
+
+                    Blank1
+                    
+                </label>
+
+            </div>
+
+            <div>
+
+                <label>
+
+                    <input type="radio" name="question6" value="option2">
+
+                    Blank2
+
+                </label>
+
+            </div>
+
+            <div>
+
+                <label>
+
+                    <input type="radio" name="question6" value="option3">
+
+                    Blank3
+
+                </label>
+
+            </div>
+
+            <div>
+
+                <label>
+
+                    <input type="radio" name="question6" value="option4">
+
+                    Blank4
+
+                </label>
+
+            </div>
+
+            <p class="required-field"></p>
+
+            </section>
+
+            <section class="question-block">
+
+            <h2>Question 7:</h2>
+            <h4>Blank?</h4>
+
+            <div>
+
+                <label>
+
+                    <input type="radio" name="question7" value="option1">
+
+                    Blank1
+                    
+                </label>
+
+            </div>
+
+            <div>
+
+                <label>
+
+                    <input type="radio" name="question7" value="option2">
+
+                    Blank2
+
+                </label>
+
+            </div>
+
+            <div>
+
+                <label>
+
+                    <input type="radio" name="question7" value="option3">
+
+                    Blank3
+
+                </label>
+
+            </div>
+
+            <div>
+
+                <label>
+
+                    <input type="radio" name="question6" value="option4">
+
+                    Blank4
+
+                </label>
+
+            </div>
+
+            <p class="required-field"></p>
+
+            </section>
+
+            <section class="question-block">
+
+            <h2>Question 8:</h2>
+            <h4>Blank?</h4>
+
+            <div>
+
+                <label>
+
+                    <input type="radio" name="question8" value="option1">
+
+                    Blank1
+                    
+                </label>
+
+            </div>
+
+            <div>
+
+                <label>
+
+                    <input type="radio" name="question8" value="option2">
+
+                    Blank2
+
+                </label>
+
+            </div>
+
+            <div>
+
+                <label>
+
+                    <input type="radio" name="question8" value="option3">
+
+                    Blank3
+
+                </label>
+
+            </div>
+
+            <div>
+
+                <label>
+
+                    <input type="radio" name="question8" value="option4">
+
+                    Blank4
+
+                </label>
+
+            </div>
+
+            <p class="required-field"></p>
+
+            </section>
+
+            <section class="question-block">
+
+            <h2>Question 9:</h2>
+            <h4>Blank?</h4>
+
+            <div>
+
+                <label>
+
+                    <input type="radio" name="question9" value="option1">
+
+                    Blank1
+                    
+                </label>
+
+            </div>
+
+            <div>
+
+                <label>
+
+                    <input type="radio" name="question9" value="option2">
+
+                    Blank2
+
+                </label>
+
+            </div>
+
+            <div>
+
+                <label>
+
+                    <input type="radio" name="question9" value="option3">
+
+                    Blank3
+
+                </label>
+
+            </div>
+
+            <div>
+
+                <label>
+
+                    <input type="radio" name="question9" value="option4">
+
+                    Blank4
+
+                </label>
+
+            </div>
+
+            <p class="required-field"></p>
+
+            </section>
+
+            <section class="question-block">
+
+            <h2>Question 10:</h2>
+            <h4>Blank?</h4>
+
+            <div>
+
+                <label>
+
+                    <input type="radio" name="question10" value="option1">
+
+                    Blank1
+                    
+                </label>
+
+            </div>
+
+            <div>
+
+                <label>
+
+                    <input type="radio" name="question10" value="option2">
+
+                    Blank2
+
+                </label>
+
+            </div>
+
+            <div>
+
+                <label>
+
+                    <input type="radio" name="question10" value="option3">
+
+                    Blank3
+
+                </label>
+
+            </div>
+
+            <div>
+
+                <label>
+
+                    <input type="radio" name="question10" value="option4">
+
+                    Blank4
+
+                </label>
+
+            </div>
+
+            <p class="required-field"></p>
+
+            </section>
+
+            <p>1 / total</p>
+
+            <a href="index.html">EXIT QUIZ</a>
+            <button type="submit">SUBMIT</button>
+
+        </form>
+
+    </main>
+
+    <footer>
+
+        <a href="index.html">HOME</a>
+        <a href="learn.html#references">REFERENCES</a>
+        <a href="about.html">ABOUT</a>
+
+    </footer>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+    <script src="js.js"></script>
+
+</body>
+</html>
